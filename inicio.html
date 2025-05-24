@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="inicio.css">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color:rgb(108, 108, 207);
+            }
+
+            a {
+                text-decoration: none;
+            }
+            
+
+            .box {
+                font-size: 20px;
+                color: white;
+                height: 250px;
+                width: 350px;
+                border-radius: 10px;
+                background: rgb(91, 91, 202);
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+            }
+
+            .buttons-container {
+                display: flex;
+                justify-content: space-around;
+                height: 50px;
+                width: 150px;
+            }
+            button {
+                height: 30px;
+                width: 50px;
+                background: white;
+                border-radius: 5px;
+                color: rgb(124, 192, 124);
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <footer>Love You</footer>
+    <img src="amor.jpeg" alt="Rosas" height="400px" width="300px" >
+    <body>
+        <div class="box">
+            <p>AINDA ME AMA?</p>
+            <div class="buttons-container">
+                <button>
+                    <a href="https://youtu.be/ISl88_PqUlk?si=OaaZ3X2vU7Y_ETwX target="_blank>Sim</a>
+                </button>
+                <button id="no">Não</button>
+            </div>
+        </div>
+        <img src="vida.jpeg" alt="Rosas" height="400px" width="300px" style="transform: scaleX(-1);" >
+    </body>
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function () {      
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px"; 
+        })
+    </script>
+    <footer>Love You</footer>
+</html>
